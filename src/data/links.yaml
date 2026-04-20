@@ -77,6 +77,12 @@ categories:
       - title: "ラスバレ攻略DB"
         url: "https://allbdb.com/"
         description: "ラスバレのデータまとめサイト"
+
+github:
+  repo_url: "https://github.com/assaultli-ly/assaultli.ly"
+  title: "Contribute to this project"
+  description: "このリンク集はオープンソースで開発されています。リンクの追加や修正はGitHubからIssueやPull Requestでお気軽にお知らせください。"
+
 footer:
   disclaimer: "本サイトは個人による非公式のファンサイトであり、各権利者様とは一切関係ありません。"
   contact_label: "お問い合わせ（Googleフォーム）"
