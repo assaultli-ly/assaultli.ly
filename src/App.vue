@@ -57,6 +57,28 @@ onMounted(() => {
         </ul>
       </section>
 
+      <footer v-if="pageData.footer" class="mt-20 pt-8 border-t border-neutral-100 text-center">
+        <p class="text-xs text-neutral-400 leading-relaxed mb-4">
+          {{ pageData.footer.disclaimer }}
+        </p>
+        <div class="text-sm">
+          <a 
+            :href="pageData.footer.contact_url" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="text-neutral-500 hover:text-neutral-700 transition-colors inline-flex items-center gap-1"
+          >
+            <span>{{ pageData.footer.contact_label }}</span>
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+        <p class="mt-8 text-[10px] text-neutral-400 tracking-widest uppercase">
+          assaultli.ly
+        </p>
+      </footer>
+
     </main>
   </div>
 </template>

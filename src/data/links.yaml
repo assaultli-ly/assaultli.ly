@@ -17,3 +17,8 @@ categories:
     links:
       - title: "舞台「アサルトリリィ」情報"
         url: "https://assaultlily-pj.com/stage/"
+
+footer:
+  disclaimer: "本サイトは個人による非公式のファンサイトであり、各権利者様とは一切関係ありません。"
+  contact_label: "お問い合わせ（Googleフォーム）"
+  contact_url: "https://forms.gle/oRy3u8XikBJNkiBN6"
