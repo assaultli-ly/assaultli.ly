@@ -21,7 +21,7 @@ onMounted(() => {
           {{ pageData.title }}
         </h1>
         <span class="block w-16 h-1 bg-neutral-400 mt-2 mb-4"></span>
-        <h2 class="text-neutral-600 mt-2">
+        <h2 class="text-neutral-600 mt-2 font-normal">
           {{ pageData.description }}
         </h2>
       </header>
@@ -39,7 +39,7 @@ onMounted(() => {
               rel="noopener noreferrer" 
               class="group flex items-center justify-between p-3 -mx-3 rounded-lg bg-neutral-50 hover:bg-neutral-100 transition-colors duration-200"
             >
-              <span class="text-neutral-800 font-medium group-hover:text-neutral-600 transition-colors">
+              <span class="text-neutral-800 font-normal group-hover:text-neutral-600 transition-colors">
                 {{ link.title }}
               </span>
               
