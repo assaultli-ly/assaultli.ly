@@ -30,21 +30,30 @@ onMounted(() => {
         <h2 class="text-xl font-semibold text-neutral-800 border-b-2 border-neutral-100 pb-2 mb-4">
           {{ category.name }}
         </h2>
-        
-        <ul class="flex flex-col gap-2">
+
+        <ul class="flex flex-col gap-1">
           <li v-for="link in category.links" :key="link.url">
-            <a 
+            <a
               :href="link.url" 
               target="_blank" 
               rel="noopener noreferrer" 
               class="group flex items-center justify-between p-3 -mx-3 rounded-lg bg-neutral-50 hover:bg-neutral-100 transition-colors duration-200"
             >
-              <span class="text-neutral-800 font-normal group-hover:text-neutral-600 transition-colors">
-                {{ link.title }}
-              </span>
+              <div class="flex flex-col">
+                <span class="text-neutral-800 font-normal group-hover:text-neutral-500 transition-colors">
+                  {{ link.title }}
+                </span>
+
+                <p
+                  v-if="link.description" 
+                  class="text-sm text-neutral-600 group-hover:text-neutral-500 font-normal mt-0.5"
+                >
+                  {{ link.description }}
+                </p>
+              </div>
               
-              <svg 
-                class="w-4 h-4 text-neutral-500 group-hover:text-neutral-500 transition-colors" 
+              <svg
+                class="w-4 h-4 text-neutral-600 group-hover:text-neutral-400 transition-colors shrink-0 ml-4" 
                 fill="none" 
                 stroke="currentColor" 
                 viewBox="0 0 24 24" 
@@ -62,7 +71,7 @@ onMounted(() => {
           {{ pageData.footer.disclaimer }}
         </p>
         <div class="text-sm">
-          <a 
+          <a
             :href="pageData.footer.contact_url" 
             target="_blank" 
             rel="noopener noreferrer" 
